@@ -12,14 +12,12 @@ body{
     background-color: #27374D;
 }
 
-#home-content, #about-content, #certificate-content{
+#home-content, #about-content, #certificate-content, #card-container{
     width: 70%;
     margin: auto;
 }
 
-.max-width{
-    width: 100%;
-}
+.max-width{width: 100%;}
 
 #home, #home-content{
     height: 100vh;
@@ -50,9 +48,7 @@ body{
     margin-top: 20px;
 }
 
-#link-group a{
-    margin-right: 20px;
-}
+#link-group a{margin-right: 20px;}
 
 #link-group img{
     height: 60px;
@@ -76,50 +72,45 @@ body{
     text-align: center;
 }
 
-#title-text, #about-text{
-    color: #27374D;
-}
+#about-text{color: #27374D;}
 
-#title-text{
+.title-text{
     font-weight: bold;
     margin-bottom: 20px;
     font-size: 35px;
     text-align: center;
 }
 
-#certificate-content #title-text{
-    color: #FFFF;
-}
+#certifications, #skills{margin-bottom: 50px;}
 
-#cert-content{
-    display: flex;
-}
+#certificate-content, #title-text{color: #FFFF;}
 
-.cert-block{
-    margin-right: 20px;
-}
+#cert-content, #card-container{display: flex;}
 
-#cert-container{
-    display: flex;
-}
+#card-container{gap: 20px;}
 
-.badge-wrapper img{
+.cert-block{margin-right: 20px;}
+
+#cert-container{display: flex;}
+
+.badge-wrapper img, .card-content img{
     position: relative;
     top: 0;
-    transition: top ease 0.5s;
     display: block;
-    max-width: 200px;
-    max-height: 200px;
     width: auto;
     height: auto;
     margin: auto;
 }
 
-.badge-wrapper img:hover{
-    top: -20px;
+.badge-wrapper img{
+    transition: top ease 0.5s;
+    max-width: 200px;
+    max-height: 200px;
 }
 
-.description{
+.badge-wrapper img:hover{top: -20px;}
+
+.description, .card-description{
     padding: 10px;
     text-align: center;
 }
@@ -128,6 +119,53 @@ body{
     cursor: pointer;
     text-decoration: underline;
 }
+
+.card-description{font-size: 25px;}
+
+.card-content img{
+    max-width: 90px;
+    max-height: 90px;
+}
+
+#php-image{
+    transform: scale(1.3);
+    margin-top: 20px;
+}
+
+#css-image{
+    transform: scale(1.3);
+    padding-top: 5px;
+}
+
+
+.card-item{
+    width: 190px;
+    height: 200px;
+    background-color: #526D82;
+    border-radius: 8px;
+    z-index: 1;
+}
+   
+.tools{
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.box{
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+   
+.circle{padding: 0 4px;}
+
+.red {background-color: #ff605c;} 
+.yellow {background-color: #ffbd44;} 
+.green {background-color: #00ca4e;}
 
 @media only screen and (max-width: 1100px){
 
@@ -148,11 +186,14 @@ body{
 
     #link-group{justify-content: center;}
 
-    #cert-container{
+    #cert-container, #card-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 20px;
+        justify-content: center;
     }
+
+    .card-item{width: auto;}
 }
 
 @media only screen and (max-width: 960px){
@@ -172,22 +213,16 @@ body{
 }
 
 @media only screen and (max-width: 640px){
-    .image-wrapper img{
-        width: 200px;
-    }
+    .image-wrapper img{width: 200px;}
 
-    #link-group img{
-        transform: scale(0.8);
-    }
+    #link-group img{transform: scale(0.8);}
 
-    #link-group a{
-        margin-right: 5px;
-    }
+    #link-group a{margin-right: 5px;}
 
     .text-1{font-size: 25px;}
     .text-2{font-size: 20px;}
 
-    #title-text{font-size: 20px;}
+    .title-text{font-size: 20px;}
 
     #about-text{font-size: 15px;}
 
@@ -205,7 +240,6 @@ body{
         width: 120px;
     }
 
-    .description{
-        font-size: 14px;
-    }
+    .description{font-size: 14px;}
+
 }
