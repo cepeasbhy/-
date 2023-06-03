@@ -172,13 +172,6 @@ body{
 }
 
 @media only screen and (max-width: 640px){
-    .image-wrapper img{
-        margin-bottom: 10px;
-        padding-top: 20px;
-        height: 100%;
-        width: 200px;
-    }
-
     #link-group img{
         transform: scale(0.8);
     }
