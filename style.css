@@ -175,8 +175,8 @@ body{
 
 @media only screen and (max-width: 640px){
     #home{
-        margin-top: 200px;
-        height: 200px;
+        margin-top: 250px;
+        height: 150px;
     }
 
     .image-wrapper img{
