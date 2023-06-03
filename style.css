@@ -172,6 +172,10 @@ body{
 }
 
 @media only screen and (max-width: 640px){
+    .image-wrapper img{
+        width: 250px;
+    }
+
     #link-group img{
         transform: scale(0.8);
     }
