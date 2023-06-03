@@ -173,6 +173,8 @@ body{
 
 @media only screen and (max-width: 640px){
     .image-wrapper img{
+        display: block;
+        margin: auto;
         width: 250px;
     }
 
