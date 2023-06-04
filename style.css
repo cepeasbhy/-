@@ -112,7 +112,9 @@ body{background-color: #27374D;}
     top: -20px;
 }
 
-.description{
+.description a{text-decoration: none;}
+
+.description {
     padding: 10px;
     text-align: center;
 }
