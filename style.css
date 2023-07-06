@@ -1,241 +1,308 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: white;
-    font-family: 'Poppins', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
-body{background-color: #27374D;}
-
-#home-content, #about-content, #certificate-content, #skill-content{
-    width: 70%;
-    margin: auto;
+body {
+  background-color: #27374d;
 }
 
-.max-width{width: 100%;}
-
-#home, #home-content{
-    height: 100vh;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#home-content,
+#about-content,
+#certificate-content,
+#skill-content {
+  width: 70%;
+  margin: auto;
 }
 
-.text-1{font-size: 70px; font-weight: bold;}
-.text-2{font-size: 40px; color:#00C4FF;}
-
-.image-wrapper img{
-    height: 100%;
-    width: 350px;
-    border-radius: 100%;
+.max-width {
+  width: 100%;
 }
 
-#network-background{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
+#home,
+#home-content {
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#link-group{
-    display: flex;
-    margin-top: 20px;
+.text-1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+.text-2 {
+  font-size: 40px;
+  color: #00c4ff;
 }
 
-#link-group a{margin-right: 20px;}
-
-#link-group img{
-    height: 60px;
-    width: 100%;
+.image-wrapper img {
+  height: 100%;
+  width: 350px;
+  border-radius: 100%;
 }
 
-#link-group img:hover{
-    transition-timing-function: ease-out;
-    transition: 0.50s;
-    transform: scale(1.2);
+#network-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-#about{
-    background-color: #FFFF;
-    padding: 40px;
+#link-group {
+  display: flex;
+  margin-top: 20px;
 }
 
-#about-text{
-    font-size: 25px;
-    text-align: center;
+#link-group a {
+  margin-right: 20px;
 }
 
-.title-text, #about-text, .skill-title, .skill-description ul > li{
-    color: #27374D;
+#link-group img {
+  height: 60px;
+  width: 100%;
 }
 
-.title-text{
-    font-weight: bold;
-    margin-bottom: 20px;
-    font-size: 35px;
-    text-align: center;
+#link-group img:hover {
+  transition-timing-function: ease-out;
+  transition: 0.5s;
+  transform: scale(1.2);
 }
 
-#certifications{
-    background-color:#27374D;
-    padding: 40px 0;
+#about {
+  background-color: #ffff;
+  padding: 40px;
 }
 
-#certificate-content, #title-text{color: #FFFF;}
-
-#cert-content{display: flex;}
-
-.cert-block{margin-right: 20px;}
-
-#cert-container{display: flex;}
-
-.badge-wrapper img{
-    position: relative;
-    top: 0;
-    display: block;
-    width: auto;
-    height: auto;
-    margin: auto;
+#about-text {
+  font-size: 25px;
+  text-align: center;
 }
 
-.badge-wrapper img{
-    max-width: 200px;
-    max-height: 200px;
-    transition: top ease 0.5s;
+.title-text,
+#about-text,
+.skill-title,
+.skill-description ul > li {
+  color: #27374d;
 }
 
-.badge-wrapper img:hover{
-    top: -20px;
+.title-text {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 35px;
+  text-align: center;
 }
 
-.description a{text-decoration: none;}
+#certifications {
+  background-color: #27374d;
+  padding: 40px 0;
+}
+
+#certificate-content,
+#title-text {
+  color: #ffff;
+}
+
+#cert-content {
+  display: flex;
+}
+
+.cert-block {
+  margin-right: 20px;
+}
+
+#cert-container {
+  display: flex;
+}
+
+.badge-wrapper img {
+  position: relative;
+  top: 0;
+  display: block;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.badge-wrapper img {
+  max-width: 200px;
+  max-height: 200px;
+  transition: top ease 0.5s;
+}
+
+.badge-wrapper img:hover {
+  top: -20px;
+}
+
+.description a {
+  text-decoration: none;
+}
 
 .description {
-    padding: 10px;
-    text-align: center;
+  padding: 10px;
+  text-align: center;
 }
 
-.description:hover{
-    cursor: pointer;
-    text-decoration: underline;
+.description:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-#skills{
-    background-color: #FFFF;
-    padding: 40px 0;
+#skills {
+  background-color: #ffff;
+  padding: 40px 0;
 }
 
-.skill-title{
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
+.skill-title {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
 }
 
-#content-wrapper{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+#content-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
-.col{
-    width: 50%;
-    padding: 10px;
+.col {
+  width: 50%;
+  padding: 10px;
 }
 
-.skill-description ul > li{
-    font-size: 18px;
-    padding: 5px 0;
+.skill-description ul > li {
+  font-size: 18px;
+  padding: 5px 0;
 }
 
 .fade-up {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .fade-up.fade-up-show {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 1100px) {
+  #home {
+    height: 100%;
+  }
 
-    #home{height: 100%;}
+  #home-content {
+    display: block;
+    height: max-content;
+  }
+  .text-1,
+  .text-2 {
+    text-align: center;
+  }
 
-    #home-content{
-        display: block;
-        height: max-content;
-    }
-    .text-1, .text-2{text-align: center;}
+  .image-wrapper img {
+    height: 100%;
+    width: 250px;
+    margin: auto;
+    display: block;
+  }
 
-    .image-wrapper img{
-        height: 100%;
-        width: 250px;
-        margin: auto;
-        display: block;
-    }
+  #link-group {
+    justify-content: center;
+  }
 
-    #link-group{justify-content: center;}
-
-    #cert-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        row-gap: 20px;
-    }
+  #cert-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+  }
 }
 
-@media only screen and (max-width: 960px){
+@media only screen and (max-width: 960px) {
+  .text-1 {
+    font-size: 50px;
+  }
+  .text-2 {
+    font-size: 25px;
+  }
 
-    .text-1{font-size: 50px;}
-    .text-2{font-size: 25px;}
-
-    #about-text{font-size: 20px;}
+  #about-text {
+    font-size: 20px;
+  }
 }
 
-@media only screen and (max-width: 780px){
+@media only screen and (max-width: 780px) {
+  .text-1 {
+    font-size: 40px;
+  }
+  .text-2 {
+    font-size: 25px;
+  }
 
-    .text-1{font-size: 40px;}
-    .text-2{font-size: 25px;}
-
-    #about-text{font-size: 20px;}
+  #about-text {
+    font-size: 20px;
+  }
 }
 
-@media only screen and (max-width: 640px){
-    
-    .image-wrapper img{width: 200px;}
+@media only screen and (max-width: 640px) {
+  .image-wrapper img {
+    width: 200px;
+  }
 
-    #link-group img{transform: scale(0.8);}
+  #link-group img {
+    transform: scale(0.8);
+  }
 
-    #link-group a{margin-right: 5px;}
+  #link-group a {
+    margin-right: 5px;
+  }
 
-    .text-1{font-size: 25px;}
-    .text-2{font-size: 20px;}
+  .text-1 {
+    font-size: 25px;
+  }
+  .text-2 {
+    font-size: 20px;
+  }
 
-    .title-text{font-size: 20px;}
+  .title-text {
+    font-size: 20px;
+  }
 
-    #about-text{font-size: 15px;}
+  #about-text {
+    font-size: 15px;
+  }
 
-    #cert-container{
-        display: flex;
-        gap: 20px;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-    }
+  #cert-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
 
-    .cert-block{scroll-snap-align: start;}
+  .cert-block {
+    scroll-snap-align: start;
+  }
 
-    .badge-wrapper img{
-        height: 120px;
-        width: 120px;
-    }
+  .badge-wrapper img {
+    height: 120px;
+    width: 120px;
+  }
 
-    .description{font-size: 14px;}
+  .description {
+    font-size: 14px;
+  }
 
-    .skill-title{font-size: 18px;}
-    
-    .skill-description ul > li{font-size: 14px;}
+  .skill-title {
+    font-size: 18px;
+  }
+
+  .skill-description ul > li {
+    font-size: 14px;
+  }
 }
